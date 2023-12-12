@@ -23,10 +23,6 @@ RUN wget -qq https://gist.githubusercontent.com/teamarctix/14298470b1a3d19162474
 RUN wget https://gist.github.com/BlackFoxy616/129bec38c78a07355588b602ca2c5152/raw/links.txt && \
     wget https://gist.github.com/BlackFoxy616/cb76be7842c810328ac99cee2f070306/raw/dled.txt
 
-# Set up yt-dlp
-RUN pip install yt-dlp && \
-    yt-dlp --version
-
 # Copy the entire local directory into the container
 COPY . .
 
