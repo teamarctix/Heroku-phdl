@@ -23,9 +23,17 @@ links=[
 
 
 
-async def progress(current, total):
-    print(f"{current * 100 / total:.1f}%")
+#async def progress(current, total):
+    #print(f"{current * 100 / total:.1f}%")
 
+async def progress(current, total, task_name="Task"):
+    percentage = current * 100 / total
+    bar_length = 20
+    completed_blocks = int(bar_length * current / total)
+
+    bar = "█" * completed_blocks + " " * (bar_length - completed_blocks)
+
+    print(f"{task_name} Progress: [{bar}] {percentage:.1f}% Complete")
 
 
 def ytdlpp(link):
