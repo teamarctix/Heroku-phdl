@@ -39,8 +39,8 @@ up = { "ytdl": False,'Total':0}
 
 links=[
    # "https://www.pornhub.com/playlist/129048362",
-    "https://www.pornhub.com/playlist/85569291"
-    #"https://www.pornhub.com/playlist/115901811"
+    #"https://www.pornhub.com/playlist/85569291"
+    "https://www.pornhub.com/playlist/115901811"
      #"https://www.pornhub.com/playlist/275691841",
       #"https://www.pornhub.com/playlist/293168491",
        #"https://www.pornhub.com/playlist/263313231"
