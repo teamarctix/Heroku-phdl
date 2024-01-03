@@ -1,8 +1,8 @@
 name: Phvdl
 on:
   workflow_dispatch:
-  schedule:
-    - cron:  '30 */3 * * *'
+  #schedule:
+  #  - cron:  '30 */3 * * *'
 jobs:
   run-sync-service:
     runs-on: ubuntu-latest
