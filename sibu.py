@@ -18,7 +18,8 @@ up = { "ytdl": False,'Total':0}
 
 
 links=[
-    "https://www.pornhub.com/playlist/85569291"
+    "https://youtube.com/playlist?list=PLMC9KNkIncKvYin_USF1qoJQnIyMAfRxl&si=w7qSDmBdsGWslf4u"
+    #"https://www.pornhub.com/playlist/85569291"
       ]
 
 
