@@ -18,7 +18,7 @@ up = {"ytdl": False, "Total": 0}
 
 api_id = 11405252
 api_hash = "b1a1fc3dc52ccc91781f33522255a880"
-bot_token = "6326333011:AAHHvjzDx7zc8nKXzobh_dNRoS5yH7KTPmw"
+bot_token = "6593397412:AAFmJ8Hj9jnZuvLs_rLcu63bQwCp0EV829w"
 
 app = Client(
     "my_bot",
