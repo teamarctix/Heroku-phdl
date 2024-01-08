@@ -4,5 +4,5 @@ mv yt-dlp_linux yt-dlp
 chmod 777 yt-dlp
 sudo apt install ffmpeg -y
 sudo apt install aria2 -y
-pip install pyrogram && pip install tgcrypto && pip install vcsi && pip install moviepy
+pip install pyrogram && pip install tgcrypto && pip install vcsi && pip install moviepy && pip install fpdf
 echo "Package Downloaded and Set"
