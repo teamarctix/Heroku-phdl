@@ -24,4 +24,4 @@ jobs:
           sudo bash startup.sh
       - name: Running the Script 
         run: |
-          sudo python main.py
+          sudo python main2.py
