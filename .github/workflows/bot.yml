@@ -23,4 +23,4 @@ jobs:
           sudo bash startup.sh
       - name: Running the Script 
         run: |
-          sudo python bot1.p
+          sudo python bot1.py
