@@ -1,0 +1,27 @@
+name: mainyml
+on:
+  workflow_dispatch:
+  #schedule:
+    #- cron:  '30 */3 * * *'
+jobs:
+  run-sync-service:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install RClone
+        run: |
+          curl https://rclone.org/install.sh | sudo bash
+          rclone help
+      - name: Checkout repository code
+        uses: actions/checkout@v2
+      - name: Cd Into Repo
+        run: |
+          cd ${{ github.workspace }}
+      - name: Downloading config file
+        run: |
+          wget -qq ${{ secrets.Rclone }} -O rclone.conf
+      - name: Running the Script 
+        run: |
+          sudo bash startup.sh
+      - name: Running the Script 
+        run: |
+          sudo python main.py
