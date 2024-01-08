@@ -224,7 +224,7 @@ async def main():
                                         gof.upload(sample_filename.replace('.mp4','.png'),clip_folder["id"])
                                         #images.append(filename.replace(".mp4",".png"))
 
-                                        ssn = 15
+                                        ssn = 10
                                         imgs =[]
                                         ssimgs = []
                                         dur = duration(filename)[0]
