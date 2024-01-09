@@ -27,7 +27,8 @@ up = { "ytdl": False,'Total':0}
 
 
 links=[
-    "https://xhamster.com/creators/leathers-kittens/"
+  #  "https://xhamster.com/creators/leathers-kittens"
+    "https://xhamster.com/creators/shraboni"
  # "https://www.pornhub.com/playlist/80286461"
    # "https://www.pornhub.com/playlist/301331341"
    #"https://www.pornhub.com/playlist/129048362",
@@ -48,7 +49,7 @@ async def progress(current, total):
 
 def ytdlpp(link):
      #time.sleep(2)
-     os.system("""./yt-dlp --downloader aria2c --match-filter "duration>180"   --max-downloads  200  -N 10  --download-archive dled.txt  -o '%(title)s.%(ext)s' -f '(mp4)[height=?720]' --write-thumbnail --embed-metadata """ + link )
+     os.system("""./yt-dlp --downloader aria2c --match-filter "duration>180"   --max-downloads  200  -N 10  -o '%(title)s.%(ext)s' -f '(mp4)[height=?720]' --write-thumbnail --embed-metadata """ + link )
      print(f"Download Completed{link}")
      time.sleep(120)
      up["ytdl"] = True
