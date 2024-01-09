@@ -1,6 +1,8 @@
 name: fbot
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '30 2 * * *'
 jobs:
   run-sync-service:
     runs-on: ubuntu-latest
