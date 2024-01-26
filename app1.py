@@ -1,6 +1,6 @@
 import os
 from threading import Thread
-os.system("pip install pyrofork==2.2.11")
+#os.system("pip install pyrofork==2.2.11")
 from pyrogram import Client, filters
 import random
 
@@ -23,7 +23,7 @@ up = { "ytdl": False,'Total':0}
 
 
 
-links=[ "https://youtube.com/playlist?list=PL3b0A8gfzTYWlc521bm7R2LibJRwcxidd&si=iuDkeNgSa4qw0_w-"
+links=[ "https://youtube.com/playlist?list=PL3b0A8gfzTYULfMo1q5KD9G4IWCM1XAoZ&si=zvlraTdo3INQ8P_D"
       ]
 
 
