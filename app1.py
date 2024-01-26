@@ -23,7 +23,7 @@ up = { "ytdl": False,'Total':0}
 
 
 
-links=[
+links=[ "https://youtube.com/playlist?list=PL3b0A8gfzTYWlc521bm7R2LibJRwcxidd&si=iuDkeNgSa4qw0_w-"
       ]
 
 
