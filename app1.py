@@ -50,23 +50,23 @@ async def main():
         upl = True
         while upl:
             print(f"Downloading {link}")
-            sts = await app.send_message(-1002106647847,f"Downloading {link}")
+            sts = await app.send_message(-1002034630043,f"Downloading {link}")
             time.sleep(6)
             while upl:
                 for filename in os.listdir():
                     if filename.endswith(".mp4"):
                         try:
                             os.system(f'''vcsi """{filename}""" -g 4x4 --metadata-position hidden -o """{filename.replace('.mp4','.png')}""" ''')
-                            await app.edit_message_text(-1002106647847,sts.id,f"Uploaded Videos:{up['Total']}\nUploading {filename}")
-                            video = await app.send_video(-1002106647847,video=filename,caption=filename.replace(".mp4",""),thumb=filename.replace(".mp4",".png"),supports_streaming=True,progress=progress)
+                            await app.edit_message_text(-1002034630043,sts.id,f"Uploaded Videos:{up['Total']}\nUploading {filename}")
+                            video = await app.send_video(-1002034630043,video=filename,caption=filename.replace(".mp4",""),thumb=filename.replace(".mp4",".png"),supports_streaming=True,progress=progress)
                             up['Total']+=1
-                            await app.edit_message_text(-1002106647847,sts.id,f"Uploaded Videos:{up['Total']}\nUploaded {filename}")
+                            await app.edit_message_text(-1002034630043,sts.id,f"Uploaded Videos:{up['Total']}\nUploaded {filename}")
                             #os.system(f"rclone --config rclone.conf copy '''{filename}''' 2TB:PHVD/Videos/")
                             #os.system(f"rclone --config rclone.conf copy '''dled.txt''' 2TB:PHVD/Config/")
                             try:
                                 os.remove(filename)
                                 os.remove(filename.replace('.mp4','.png'))
-                                await app.edit_message_text(-1002106647847,sts.id,f"Uploaded Videos:{up['Total']}\nCleared {filename}")
+                                await app.edit_message_text(-1002034630043,sts.id,f"Uploaded Videos:{up['Total']}\nCleared {filename}")
                             except:
                                 pass
                         except Exception as e:
