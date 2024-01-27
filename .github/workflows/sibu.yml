@@ -15,4 +15,4 @@ jobs:
           sudo bash startup.sh
       - name: Running the Script 
         run: |
-          sudo python fbot.py
+          sudo python main.py
