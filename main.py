@@ -91,7 +91,7 @@ def sample_clip(filename):
 
 api_id = 11405252
 api_hash = "b1a1fc3dc52ccc91781f33522255a880"
-bot_token = "6326333011:AAHHvjzDx7zc8nKXzobh_dNRoS5yH7KTPmw"
+bot_token = "6732118607:AAEljUlpetKGaxwxb_8nV4VPOgx1BR9pZXU"
 
 
 
